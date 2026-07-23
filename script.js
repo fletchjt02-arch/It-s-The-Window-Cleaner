@@ -1,1 +1,46 @@
-function calc(){let t=type.value,b=beds.value,p=0;if(t=='Terrace')p={2:15,3:18,4:22}[b];if(t=='Semi')p={2:18,3:22,4:26}[b];if(t=='Detached')p={2:24,3:28,4:34}[b];price.innerText='Estimated Quote: £'+p;}
+function calculateQuote() {
+
+let type = document.getElementById("propertyType").value;
+let beds = document.getElementById("bedrooms").value;
+
+let price = 0;
+
+if(type=="Terraced"){
+    if(beds=="2 Bedrooms") price=15;
+    if(beds=="3 Bedrooms") price=18;
+    if(beds=="4 Bedrooms") price=22;
+    if(beds=="5+ Bedrooms") price=25;
+}
+
+if(type=="Semi Detached"){
+    if(beds=="2 Bedrooms") price=18;
+    if(beds=="3 Bedrooms") price=22;
+    if(beds=="4 Bedrooms") price=26;
+    if(beds=="5+ Bedrooms") price=30;
+}
+
+if(type=="Detached"){
+    if(beds=="2 Bedrooms") price=24;
+    if(beds=="3 Bedrooms") price=28;
+    if(beds=="4 Bedrooms") price=34;
+    if(beds=="5+ Bedrooms") price=40;
+}
+
+if(type=="Bungalow"){
+    if(beds=="2 Bedrooms") price=18;
+    if(beds=="3 Bedrooms") price=22;
+    if(beds=="4 Bedrooms") price=26;
+    if(beds=="5+ Bedrooms") price=30;
+}
+
+if(type=="Flat"){
+    if(beds=="2 Bedrooms") price=12;
+    if(beds=="3 Bedrooms") price=15;
+    if(beds=="4 Bedrooms") price=18;
+    if(beds=="5+ Bedrooms") price=20;
+}
+
+document.getElementById("quotePrice").innerHTML =
+"<h1>Estimated Quote: £"+price+"</h1>";
+
+}
