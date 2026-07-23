@@ -1,0 +1,1 @@
+function calc(){let t=type.value,b=beds.value,p=0;if(t=='Terrace')p={2:15,3:18,4:22}[b];if(t=='Semi')p={2:18,3:22,4:26}[b];if(t=='Detached')p={2:24,3:28,4:34}[b];price.innerText='Estimated Quote: £'+p;}
