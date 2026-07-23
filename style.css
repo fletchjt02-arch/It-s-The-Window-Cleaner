@@ -1,1 +1,57 @@
-body{font-family:Arial}input,select,button{display:block;width:100%;margin:8px 0;padding:10px}header{background:#0b6efd;color:#fff;padding:20px;text-align:center}
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f5f7fa;
+}
+
+header{
+background:#0077cc;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.button{
+background:#28a745;
+padding:15px 30px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+input,
+select,
+button{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+font-size:16px;
+}
+
+button{
+background:#0077cc;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+#quotePrice{
+text-align:center;
+color:#0077cc;
+font-size:28px;
+margin-top:30px;
+}
