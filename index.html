@@ -1,54 +1,79 @@
-------------------------------------------------
-        IT'S THE WINDOW CLEANER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It's The Window Cleaner</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-Professional Window Cleaning
+<body>
 
-★★★★★ Rated by Local Customers
+<header>
+    <h1>It's The Window Cleaner</h1>
+    <p>Professional Window Cleaning Across York & Surrounding Areas</p>
+    <a href="#quote" class="button">Get Your Instant Quote</a>
+</header>
 
-[ Get Instant Quote ]
+<section>
+    <h2>Why Choose Us?</h2>
 
-------------------------------------------------
+    <div class="card">
+        <h3>💧 Pure Water Cleaning</h3>
+        <p>Streak-free windows every time.</p>
+    </div>
 
-Step 1
+    <div class="card">
+        <h3>⭐ Reliable Service</h3>
+        <p>Regular 4 or 8 weekly cleaning.</p>
+    </div>
 
-Property Type
+    <div class="card">
+        <h3>🛡 Fully Insured</h3>
+        <p>Professional and trustworthy.</p>
+    </div>
+</section>
 
-Bedrooms
+<section id="quote">
 
-Extras
+<h2>Get an Instant Quote</h2>
 
-[ Calculate ]
+<form>
 
-£28.00
+<input type="text" placeholder="Full Name">
 
-------------------------------------------------
+<input type="text" placeholder="Address">
 
-Step 2
+<input type="text" placeholder="Postcode">
 
-Name
+<input type="email" placeholder="Email Address">
 
-Address
+<input type="tel" placeholder="Mobile Number">
 
-Postcode
+<select id="propertyType">
+<option>Terraced</option>
+<option>Semi Detached</option>
+<option>Detached</option>
+<option>Bungalow</option>
+<option>Flat</option>
+</select>
 
-Mobile
+<select id="bedrooms">
+<option>2 Bedrooms</option>
+<option>3 Bedrooms</option>
+<option>4 Bedrooms</option>
+<option>5+ Bedrooms</option>
+</select>
 
-Email
+<button type="button" onclick="calculateQuote()">Calculate Quote</button>
 
-[ Book This Quote ]
+</form>
 
-------------------------------------------------
+<h2 id="quotePrice"></h2>
 
-Before & After Gallery
+</section>
 
-------------------------------------------------
+<script src="script.js"></script>
 
-Reviews
-
-------------------------------------------------
-
-Call Now
-Facebook
-WhatsApp
-
-------------------------------------------------
+</body>
+</html>
